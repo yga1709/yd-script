@@ -9,4 +9,4 @@ youtube-dl -o "${path}/movie_${today}_%(title)s-%(id)s.%(ext)s" -f 248 $1
 echo $music
 echo $movie
 echo $title
-ffmpeg -i $music -i $movie -c:v copy -c:a copy ${path}/${title}
+ffmpeg -i "$music" -i "$movie" -c:v copy -c:a copy "${path}/${title}"
